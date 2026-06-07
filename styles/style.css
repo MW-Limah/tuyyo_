@@ -2,18 +2,20 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 body {
   font-family: "DynaPuff", system-ui;
-  padding: 0;
-  margin: 0;
+  background-color: #f8fcfc; /* Uma cor de fundo levemente suave cai bem */
 }
 nav {
-  max-width: 100%;
-  height: 25px;
+  width: 100%;
+  min-height: 45px; /* min-height no lugar de height fixo evita que o texto vaze */
   padding: 10px 20px;
   background-color: #48bdf0;
+  display: flex;
+  align-items: center; /* Centraliza o texto verticalmente */
 }
 
 nav h2 {
@@ -46,8 +48,8 @@ nav h2 {
 
 .timeline-item {
   width: 80%;
-  height: 200px;
-  background-color: #f5f7fc;
+  height: 250px;
+  background-color: #e7f2ff;
   border-left: 4px solid #3498db;
   padding: 20px;
   border-radius: 8px;
@@ -57,6 +59,9 @@ nav h2 {
   scroll-snap-align: start;
 }
 
+.timeline-item:hover {
+  transform: scale(1.02);
+}
 .timeline-item h4 {
   font-weight: 500;
   margin-bottom: 10px;
@@ -67,13 +72,16 @@ nav h2 {
   flex-direction: column;
   align-items: center;
 }
-.imagem a button {
+
+.btn-download {
+  display: inline-block;
   margin: 10px 0;
   padding: 0.5rem 2rem;
   border-radius: 10px;
   font-size: 14pt;
-  border: none;
   background-color: #48bdf0;
   color: #ffffff;
   font-weight: 500;
+  text-decoration: none; /* Remove a linha do link */
+  cursor: pointer;
 }

@@ -5,7 +5,7 @@ const errou2 = document.getElementById("errou2");
 const errou3 = document.getElementById("errou3");
 
 let tentativas = 0;
-let senhaCorreta = "12345";
+let senhaCorreta = "03/dez";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
