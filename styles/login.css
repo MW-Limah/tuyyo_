@@ -46,3 +46,10 @@ main {
 .errou3 {
   display: none;
 }
+
+.errou img,
+.errou2 img,
+.errou3 img {
+  width: 150px;
+  object-fit: contain;
+}
