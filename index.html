@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tú y Yo</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="loginForm">
+        <h2>Tá curiosa é?</h2>
+        <form id="form" class="form">
+          <label for="senha">Qual é a senha?</label>
+          <input id="senha" name="senha" type="password" />
+          <button type="submit">Entrar</button>
+          <p id="msg"></p>
+        </form>
+        <div class="errou" id="errou">
+          <img src="./img/errou.png" alt="Não é não" />
+        </div>
+        <div class="errou2" id="errou2">
+          <img src="./img/erroudnv.png" alt="Chegou nem perto" />
+        </div>
+        <div class="errou3" id="errou3">
+          <img src="./img/errou3.png" alt="Frigideiras, quem diria?" />
+        </div>
+      </section>
+    </main>
+    <script src="./js/verifypass.js"></script>
+  </body>
+</html>

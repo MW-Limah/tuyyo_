@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "DynaPuff", system-ui;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  max-width: 100%;
+  height: 25px;
+  padding: 10px 20px;
+  background-color: #48bdf0;
+}
+
+nav h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.imagem img {
+  max-width: 100%;
+}
+
+.timeline {
+  padding: 20px 10px;
+}
+
+.timeline-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none;
+}
+
+.timeline-item {
+  width: 80%;
+  height: 200px;
+  background-color: #f5f7fc;
+  border-left: 4px solid #3498db;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  user-select: none;
+  scroll-snap-align: start;
+}
+
+.timeline-item h4 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagem a button {
+  margin: 10px 0;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  font-size: 14pt;
+  border: none;
+  background-color: #48bdf0;
+  color: #ffffff;
+  font-weight: 500;
+}
