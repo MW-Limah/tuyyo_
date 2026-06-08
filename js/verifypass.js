@@ -9,6 +9,7 @@ let senhaCorreta = "03/dez";
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  document.activeElement.blur();
   const senha = document.getElementById("senha").value;
   if (senha === senhaCorreta) {
     msg.textContent = "Acertou";
